@@ -1,0 +1,156 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #F4E8FC;
+   font-family: 'Noto Sans', sans-serif;
+}
+.container{
+   height: 500px;
+   width: 500px;
+   background-color: #FFFFFF;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 4px 8px rgb(58, 58, 58);
+   overflow: hidden;
+}
+.header{
+   display: flex;
+   width: 100%;
+   height: 40%;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.1)), url(./images/web-1012467_1280.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.header .header-title{
+   display: block;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   font-size: 30px;
+   font-weight: bolder;
+   text-transform: uppercase;
+}
+
+
+
+
+
+.login-form{
+   width: 100%;
+   padding: 40px 60px;
+}
+form{
+   font-size: 15px;
+   text-align: center;
+   margin: 0 auto;
+}
+table{
+   width: 100%;
+}
+tr{
+   height: 40px;
+}
+.extra{
+   height: 30px;
+}
+th{
+   width: 25%;
+   padding-right: 15px;
+   text-align: left;
+   color: rgb(65, 65, 65);
+   font-weight: lighter;
+}
+td{
+   width: 75%;
+}
+#type{
+   border: transparent;
+   border-bottom: 1px solid #4e4e4e;
+   padding: 5px;
+   width: 100%;
+   outline: none;
+   font-size: 15px;
+}
+#type:focus{
+   border-bottom: 2px solid rgb(11, 160, 230);
+}
+::placeholder{
+   opacity: .7;
+}
+.extra td{
+   font-size: 12px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   color: rgb(65, 65, 65);
+   margin-top: 10px;
+}
+.extra a{
+   text-decoration: none;
+   color: rgb(65, 65, 65);
+}
+.extra a:hover{
+   text-decoration: underline;
+}
+.checkbox{
+   display: flex;
+   align-items: center;
+}
+#cbox{
+   margin-right: 5px;
+}
+
+.btn{
+   padding: 5px;
+   margin-top: 20px;
+   width: 100%;
+   border: 1px solid rgb(58, 58, 58,.3);
+   border-radius: 5px;
+   outline: none;
+   font-size: 20px;
+   font-weight: bold;
+   background-color: #fff;
+   cursor: pointer;
+   transition: background-color .5s;
+}
+.btn:hover{
+   background: linear-gradient(to right, hsl(324, 100%, 59%), hsl(33, 100%, 59%));
+   color: #fff;
+}
+
+@media screen and (max-width:790px) {
+   .container{
+      height: 400px;
+      width: 400px;
+   }
+   .login-form{
+      width: 100%;
+      padding: 30px 40px;
+   }
+   .btn{
+      margin-top: 10px;
+   }
+}
+@media screen and (max-width:550px) {
+   .container{
+      height: 400px;
+      width: 300px;
+   }
+   .login-form{
+      width: 100%;
+      padding: 30px 20px;
+   }
+   .btn{
+      margin-top: 10px;
+   }
+}

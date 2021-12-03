@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Merriweather&family=Noto+Sans&display=swap" rel="stylesheet">
+   <title>Sign-in</title>
+</head>
+<body>
+   <div class="container">
+      <div class="header">
+         <div class="header-title">Sign in</div>
+      </div>
+      <div class="login-form">
+         <form action="">
+            <table>
+               <tr>
+                  <th><label for="name">Username</label></th>
+                  <td><input type="text" name="name" id="type" placeholder="Enter Username" required></td>
+               </tr>
+               <tr>
+                  <th><label for="pass">Password</label></th>
+                  <td><input type="password" name="pass" id="type" placeholder="Enter Password" minlength="6" required></td>
+               </tr>
+               <tr class="extra">
+                  <th></th>
+                  <td>
+                     <div class="checkbox"><input type="checkbox" name="" id="cbox"><span>Remember me</span></div>
+                     <a href="">Forgot Password?</a>
+                  </td>
+               </tr>
+            </table>
+            <button type="submit" class="btn">Login</button>
+         </form>
+      </div>
+   </div>
+</body>
+</html>
